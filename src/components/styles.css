@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "MontLight";
+  src: url("../assets/Font/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MontBold";
+  src: url("../assets/Font/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("../assets/Font/Montserrat-Medium.ttf") format("truetype");
+}
+/* Container */
+.myContainer {
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+  padding-top: 50px;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* Text */ 
+.title {
+  font-family: MontBold;
+  color: white;
+}
+
+.text {
+  font-family: Mont;
+  color: white;
+}
+
+.smallText {
+  font-family: MontLight;
+  color: white;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+/* Image  */
+
+.imgRound {
+  border-radius: 32px;
+}

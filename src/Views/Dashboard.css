@@ -1,0 +1,11 @@
+.mainDivDashboard {
+    background-color: #bdbdbd;
+    min-height: 100vh;
+    border-radius: 30px;
+    margin: 200px;
+    padding: 50px;
+}
+
+.rowContainer {
+    padding-top: 30px;
+}

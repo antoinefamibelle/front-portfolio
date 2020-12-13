@@ -1,0 +1,11 @@
+export const login = 'login';
+export const logout = 'logout';
+export const setNumberWidget = 'setNumberWidget';
+export const setEmail = 'setEmail';
+export const setLocation = 'setLocation';
+export const setBio = 'setBio';
+export const setGithubUsername = 'setGithubUsername';
+export const setWebsite = 'setWebsite';
+export const setLivingCity ='setLivingCity';
+export const setWorkingCity = 'setWorkingCity';
+export const setUserToken = 'setUserToken';
