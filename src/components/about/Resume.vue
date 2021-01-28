@@ -6,27 +6,29 @@
           <v-col md="6" class="rightAlign" style="padding: 10px">
             <v-img
               class="imgRound"
-              src="https://www.seanhalpin.design/images/info/me@2x.png"
+              src="../../assets/me.jpg"
+              alt="This is a picture of me (Antoine Famibelle)"
             />
           </v-col>
           <v-col md="6" class="leftAlign" style="padding: 10px">
             <v-row>
-              <v-col md="12">
+              <v-col md="12" style="margin-top: 50px">
                 <h2 class="title titleText">
-                  I’m Seán, a Product Designer working remotely for Help Scout
-                  on their mobile products in sunny Dublin, Ireland.
+                  Je suis Antoine, un etudiant en informatique mais aussi un
+                  Developpeur Web et un Chef de Projet travaillant actuellement
+                  chez Pertimm.
                 </h2>
               </v-col>
-              <v-col md="12">
+              <v-col md="12" style="margin-top: 50px">
                 <h4 class="text">
-                  I’ve spent the past 12+ years working across different areas
-                  of digital design; front-end development, email design,
-                  marketing site pages, app UI/UX, to my current role designing
-                  products for mobile platforms. These days my time is spent
-                  researching, designing, prototyping, and coding. I also help
-                  designers get started with their careers. Out of the office
-                  you’ll find me dreaming of soccer, playing bass guitar, and
-                  petting all the good dogs.
+                  Cela fait maintenant + de 3ans que je suis rentrer a Epitech
+                  Paris afin de devenir developpeur. Passionne par ce metier,
+                  j'ai lors de mes etudes decider de me lancer en Freelance afin
+                  de financer ces dernieres. Je suis un developpeur FullStack
+                  avec un preference pour le Front-End ainsi que avec une
+                  certaines sensibilites a l'UX et a l'UI. Sportif de haut
+                  niveau, j'ai pour valeur le professionalisme, l'effort, et le
+                  gout du travail bien fait.
                 </h4>
               </v-col>
             </v-row>

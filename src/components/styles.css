@@ -57,3 +57,9 @@
 .imgRound {
   border-radius: 32px;
 }
+
+/* Input */
+
+.myInput {
+  text-align: center;
+}
