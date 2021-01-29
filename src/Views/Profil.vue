@@ -3,12 +3,7 @@
 </template>
 
 <script>
-/**
- * @constructor Profil Component
- */
-
 export default {
   name: "Profil",
-  data: function () {},
 };
 </script>

@@ -9,13 +9,58 @@
         </v-col>
         <v-col md="12" align="center">
           <div class="CardContact">
-            <v-text-field
-              class="myInput"
-              label="Name"
-              outlined
-              light
-              clearable
-            ></v-text-field>
+            <v-row>
+              <v-col>
+                <v-text-field
+                  class="myInput"
+                  style="margin: 20px"
+                  label="Votre nom"
+                  shaped
+                  outlined
+                  dark
+                  clearable
+                  :rules="[rules.required]"
+                ></v-text-field>
+              </v-col>
+              <v-col>
+                <v-text-field
+                  class="myInput"
+                  style="margin: 20px"
+                  label="Votre email"
+                  shaped
+                  outlined
+                  dark
+                  clearable
+                  :rules="[rules.required, rules.email]"
+                ></v-text-field>
+              </v-col>
+              <v-col md="12">
+                <v-text-field
+                  class="myInput"
+                  style="margin: 20px"
+                  label="Sujet de votre Email"
+                  shaped
+                  outlined
+                  dark
+                  clearable
+                  :rules="[rules.required]"
+                ></v-text-field>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col>
+                <v-text-field
+                  class="myInput"
+                  style="margin: 20px; height: 250px"
+                  label="Votre message"
+                  shaped
+                  outlined
+                  dark
+                  clearable
+                  :rules="[rules.required]"
+                ></v-text-field>
+              </v-col>
+            </v-row>
           </div>
         </v-col>
       </v-row>
@@ -28,6 +73,19 @@ import "../styles.css";
 
 export default {
   name: "ContactPage",
+  data() {
+    return {
+      name: "",
+      email: "",
+      rules: {
+        required: (value) => !!value || "Required.",
+        email: (value) => {
+          const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return pattern.test(value) || "Invalid e-mail.";
+        },
+      },
+    };
+  },
 };
 </script>
 
