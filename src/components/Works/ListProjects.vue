@@ -11,26 +11,35 @@
         <v-carousel-item v-for="project in projects" :key="project.id">
           <v-row align="center" justify="center">
             <v-sheet height="100%" style="width: 100%; background-color: #111">
-              <v-img max-height="1000px" :src="project.images[0].url">
-                <div class="ProjectContainer">
-                  <v-row align="center" justify="center">
-                    <v-col md="12" style="text-align: center">
-                      <v-row>
-                        <v-col md="12">
-                          <h1>{{ project.title }}</h1>
-                        </v-col>
-                        <v-col md="12">
-                          <h3>{{ project.description }}</h3>
-                        </v-col>
-                        <v-col md="12">
-                          <v-btn :href="project.url" target="_blank">
-                            Voir en ligne</v-btn
-                          >
-                        </v-col>
-                      </v-row>
-                    </v-col>
-                  </v-row>
-                </div>
+              <v-img height="100%" width="100%" :src="project.images[0].url">
+                <v-col
+                  v-if="!$vuetify.breakpoint.mobile"
+                  md="12"
+                  style="width: 100%; height: 100%"
+                  justify="center"
+                  align-self="center"
+                  justify-self="center"
+                >
+                  <div class="ProjectContainer">
+                    <v-row align="center" justify="center">
+                      <v-col md="12" style="text-align: center">
+                        <v-row>
+                          <v-col md="12">
+                            <h1>{{ project.title }}</h1>
+                          </v-col>
+                          <v-col md="12">
+                            <h3>{{ project.description }}</h3>
+                          </v-col>
+                          <v-col md="12">
+                            <v-btn :href="project.url" target="_blank">
+                              Voir en ligne</v-btn
+                            >
+                          </v-col>
+                        </v-row>
+                      </v-col>
+                    </v-row>
+                  </div>
+                </v-col>
               </v-img>
             </v-sheet>
           </v-row>
@@ -186,8 +195,18 @@ export default {
 
 <style>
 .ProjectContainer {
-  height: 100%;
-  width: 80%;
-  background-color: rgba (0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 250px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20%;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  border-radius: 24px;
+  filter: blur(5px);
 }
 </style>

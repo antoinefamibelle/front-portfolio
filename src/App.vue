@@ -3,7 +3,9 @@
     <div id="nav">
       <Navbar />
     </div>
-    <router-view />
+    <v-app>
+      <router-view />
+    </v-app>
   </div>
 </template>
 
@@ -25,5 +27,12 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 </style>

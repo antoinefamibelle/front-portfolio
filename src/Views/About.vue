@@ -1,5 +1,5 @@
 <template>
-  <div class="myContainer">
+  <div class="myContainer" style="height: 100%; overflow: hidden">
     <Resume />
   </div>
 </template>

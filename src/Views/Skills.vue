@@ -1,7 +1,7 @@
 <template>
   <div style="background-color: #111; width: 100%; height: 100%">
     <v-row class="center">
-      <v-col md="12" style="padding: 30%">
+      <v-col md="12">
         <div
           style="
             border-color: white;
@@ -19,7 +19,7 @@
             :width="15"
             :value="item.level"
             :color="item.color"
-            style="margin: 15px"
+            style="margin: 20px"
           >
             <span>{{ item.name }}</span>
           </v-progress-circular>

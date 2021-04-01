@@ -6,20 +6,20 @@ import Profil from '../Views/Profil.vue';
 import Contact from '../Views/Contact.vue';
 import About from '../Views/About.vue';
 import Work from '../Views/Work.vue';
-
+import Skills from '../Views/Skills.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
- {
-   path: '/',
-   name: 'Home',
-   component: Home
- },
- {
-  path: '/profil',
-  name: 'Profil',
-  component: Profil
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/profil',
+    name: 'Profil',
+    component: Profil
   },
   {
     path: '/contact',
@@ -32,9 +32,14 @@ const routes = [
     component: About
   },
   {
-    path: '/work',
+    path: '/realisation',
     name: 'Work',
     component: Work
+  },
+  {
+    path: '/competences',
+    name: 'Skills',
+    component: Skills
   },
 ]
 
