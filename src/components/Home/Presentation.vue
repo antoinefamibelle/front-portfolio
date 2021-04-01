@@ -1,5 +1,5 @@
 <template>
-  <div class="myContainer" style="text-align: justify">
+  <div class="myContainer" style="text-align: justify; overflow: hidden">
     <v-row md="12" class="center">
       <v-col md="3" />
       <v-col md="6">
@@ -19,6 +19,10 @@ import "../../App.css";
 
 export default {
   name: "Presentation",
+
+  data() {
+    return {};
+  },
 };
 </script>
 
@@ -62,5 +66,9 @@ export default {
   50% {
     border-right: 2px solid #222;
   }
+}
+
+.myImg {
+  border-radius: 24px;
 }
 </style>

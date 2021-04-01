@@ -1,71 +1,69 @@
 <template>
-  <v-container style="background-color: #111">
-    <div class="myContainer" style="height: 80vh">
-      <v-row>
-        <v-col md="12">
-          <h1 class="title" style="text-align: center">
-            Alors ? Pret a faire connaissance ?
-          </h1>
-        </v-col>
-        <v-col md="12" align="center">
-          <div class="CardContact">
-            <v-row>
-              <v-col>
-                <v-text-field
-                  class="myInput"
-                  style="margin: 20px"
-                  label="Votre nom"
-                  shaped
-                  outlined
-                  dark
-                  clearable
-                  :rules="[rules.required]"
-                ></v-text-field>
-              </v-col>
-              <v-col>
-                <v-text-field
-                  class="myInput"
-                  style="margin: 20px"
-                  label="Votre email"
-                  shaped
-                  outlined
-                  dark
-                  clearable
-                  :rules="[rules.required, rules.email]"
-                ></v-text-field>
-              </v-col>
-              <v-col md="12">
-                <v-text-field
-                  class="myInput"
-                  style="margin: 20px"
-                  label="Sujet de votre Email"
-                  shaped
-                  outlined
-                  dark
-                  clearable
-                  :rules="[rules.required]"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col>
-                <v-text-field
-                  class="myInput"
-                  style="margin: 20px; height: 250px"
-                  label="Votre message"
-                  shaped
-                  outlined
-                  dark
-                  clearable
-                  :rules="[rules.required]"
-                ></v-text-field>
-              </v-col>
-            </v-row>
-          </div>
-        </v-col>
-      </v-row>
-    </div>
-  </v-container>
+  <div style="background-color: #111; height: 100vh">
+    <v-row justify="center" align="center" class="center">
+      <v-col md="12">
+        <h1 class="title" style="text-align: center">
+          Alors ? Pret a faire connaissance ?
+        </h1>
+      </v-col>
+      <v-col md="12" align="center">
+        <div class="CardContact">
+          <v-row>
+            <v-col>
+              <v-text-field
+                class="myInput"
+                style="margin: 20px"
+                label="Votre nom"
+                shaped
+                outlined
+                dark
+                clearable
+                :rules="[rules.required]"
+              ></v-text-field>
+            </v-col>
+            <v-col>
+              <v-text-field
+                class="myInput"
+                style="margin: 20px"
+                label="Votre email"
+                shaped
+                outlined
+                dark
+                clearable
+                :rules="[rules.required, rules.email]"
+              ></v-text-field>
+            </v-col>
+            <v-col md="12">
+              <v-text-field
+                class="myInput"
+                style="margin: 20px"
+                label="Sujet de votre Email"
+                shaped
+                outlined
+                dark
+                clearable
+                :rules="[rules.required]"
+              ></v-text-field>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col>
+              <v-text-field
+                class="myInput"
+                style="margin: 20px; height: 250px"
+                label="Votre message"
+                shaped
+                outlined
+                dark
+                clearable
+                :rules="[rules.required]"
+              ></v-text-field>
+            </v-col>
+          </v-row>
+        </div>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
@@ -93,7 +91,7 @@ export default {
 .CardContact {
   border: 1px solid white;
   border-radius: 24px;
-  height: 60vh;
+  height: 80%;
   width: 80%;
   text-align: center;
 }

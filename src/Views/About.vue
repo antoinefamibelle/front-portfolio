@@ -7,7 +7,7 @@
 <script>
 import "../components/styles.css";
 
-import Resume from "../components/about/Resume.vue";
+import Resume from "../components/Resume/Resume.vue";
 
 export default {
   name: "About",
