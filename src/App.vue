@@ -29,10 +29,19 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media only screen and (min-width: 1280px) {
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 html,
 body {
   margin: 0;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 </style>

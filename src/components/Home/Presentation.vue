@@ -1,10 +1,17 @@
 <template>
   <div class="myContainer" style="text-align: justify; overflow: hidden">
     <v-row md="12" class="center">
-      <v-col md="3" />
-      <v-col md="6">
+      <v-col v-if="!$vuetify.breakpoint.mobile" md="3" />
+      <v-col md="6" xs="12" sm="12">
         <h1 class="textMulti">Antoine Famibelle</h1>
-        <h1 class="textMulti animText" style="font-size: 45px">
+        <h1
+          v-if="!$vuetify.breakpoint.mobile"
+          class="textMulti animText"
+          style="font-size: 45px"
+        >
+          Developpeur FullStack&nbsp;
+        </h1>
+        <h1 v-else class="textMulti animText" style="font-size: 28px">
           Developpeur FullStack&nbsp;
         </h1>
       </v-col>

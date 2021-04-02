@@ -48,27 +48,59 @@
             <v-btn color="blue" @click="overlay = !overlay">Menu</v-btn>
             <v-overlay :value="overlay">
               <v-row>
-                <v-btn icon @click="overlay = false" href="#me">
-                  <h3>Qui suis-je ?</h3>
+                <v-btn
+                  icon
+                  @click="overlay = false"
+                  href="/"
+                  style="text-align: center"
+                >
+                  <h3 style="text-align: center">Accueil</h3>
                 </v-btn>
               </v-row>
               <v-row>
-                <v-btn icon @click="overlay = false" href="#skill">
-                  <h3>Competences</h3>
+                <v-btn
+                  icon
+                  @click="overlay = false"
+                  href="/about"
+                  style="text-align: center"
+                >
+                  <h3 style="text-align: center">Presentation</h3>
                 </v-btn>
               </v-row>
               <v-row>
-                <v-btn icon @click="overlay = false" href="#xp">
-                  <h3>Experiences</h3>
+                <v-btn
+                  icon
+                  @click="overlay = false"
+                  href="/realisation"
+                  style="text-align: center"
+                >
+                  <h3 style="text-align: center">Realisation</h3>
                 </v-btn>
               </v-row>
               <v-row>
-                <v-btn icon @click="overlay = false">
-                  <h3>Contact</h3>
+                <v-btn
+                  icon
+                  @click="overlay = false"
+                  href="/competences"
+                  style="text-align: center"
+                >
+                  <h3 style="text-align: center">Competences</h3>
                 </v-btn>
               </v-row>
               <v-row>
-                <v-icon>mdi-close</v-icon>
+                <v-btn
+                  icon
+                  @click="overlay = false"
+                  href="/contact"
+                  style="text-align: center"
+                >
+                  <h3 style="text-align: center">Contact</h3>
+                </v-btn>
+              </v-row>
+              <v-row>
+                <v-btn @click="overlay = false">
+                  <v-icon>mdi-close</v-icon>
+                </v-btn>
               </v-row>
             </v-overlay>
           </div>
