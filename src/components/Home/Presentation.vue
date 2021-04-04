@@ -1,7 +1,7 @@
 <template>
   <div class="myContainer" style="text-align: justify; overflow: hidden">
     <v-row md="12" class="center">
-      <v-col md="3" sm="0" />
+      <v-col v-if="!$vuetify.breakpoint.mobile" md="3" />
       <v-col>
         <h1 class="textMulti">Antoine Famibelle</h1>
         <h1
@@ -15,7 +15,7 @@
           Developpeur FullStack&nbsp;
         </h1>
       </v-col>
-      <v-col md="3" sm="0" />
+      <v-col v-if="!$vuetify.breakpoint.mobile" md="3" />
     </v-row>
   </div>
 </template>

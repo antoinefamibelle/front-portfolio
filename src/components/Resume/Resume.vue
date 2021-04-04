@@ -1,25 +1,12 @@
 <template>
   <div style="background-color: #111">
     <v-row md="12">
-      <v-col
-        v-if="!$vuetify.breakpoint.mobile"
-        md="6"
-        class="rightAlign"
-        style="padding: 10%"
-      >
+      <v-col md="6" sm="12" class="rightAlign" style="padding: 10%">
         <v-img
           class="imgRound"
           src="../../assets/me.jpg"
           alt="This is a picture of me (Antoine Famibelle)"
           style="max-width: 80%; max-height: 100%; margin-left: 20%"
-        />
-      </v-col>
-      <v-col v-else md="12" class="rightAlign" style="padding: 10%">
-        <v-img
-          class="imgRound"
-          src="../../assets/me.jpg"
-          alt="This is a picture of me (Antoine Famibelle)"
-          style="max-width: 80%; max-height: 100%; margin-left: 10%"
         />
       </v-col>
       <v-col
