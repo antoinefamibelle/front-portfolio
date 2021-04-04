@@ -195,18 +195,17 @@ export default {
 
 <style>
 .ProjectContainer {
-  background-color: rgba(0, 0, 0, 0.2);
   height: 250px;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 20%;
-  justify-content: center;
-  justify-items: center;
-  justify-self: center;
-  align-items: center;
-  align-content: center;
-  align-self: center;
+  color: black;
   border-radius: 24px;
-  filter: blur(5px);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 </style>
