@@ -5,7 +5,9 @@ import Home from '../Views/Home.vue';
 import Contact from '../Views/Contact.vue';
 import About from '../Views/About.vue';
 import Work from '../Views/Work.vue';
-import Skills from '../Views/Skills.vue'
+import Skills from '../Views/Skills.vue';
+import Experiences from '../Views/Experiences.vue';
+import Error from '../Views/Error.vue';
 
 Vue.use(VueRouter)
 
@@ -34,6 +36,16 @@ const routes = [
     path: '/competences',
     name: 'Skills',
     component: Skills
+  },
+  {
+    path: '/experiences',
+    name: 'Experiences',
+    component: Experiences
+  },
+  {
+    path: '*',
+    name: 'Error',
+    component: Error
   },
 ]
 

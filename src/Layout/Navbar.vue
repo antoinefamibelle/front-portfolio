@@ -23,8 +23,14 @@
         </v-btn>
         <v-btn text color="#111">
           <router-link to="/realisation">
-            <v-icon>mdi-briefcase-outline</v-icon>
+            <v-icon>mdi-console-network-outline</v-icon>
             <h4 class="text">Realisation</h4>
+          </router-link>
+        </v-btn>
+        <v-btn text color="#111">
+          <router-link to="/experiences">
+            <v-icon>mdi-briefcase-outline</v-icon>
+            <h4 class="text">Experiences</h4>
           </router-link>
         </v-btn>
         <v-btn text color="#111">
