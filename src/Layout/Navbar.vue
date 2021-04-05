@@ -8,7 +8,7 @@
               src="../assets/logo.png"
               height="30px"
               width="40px"
-              style="margin-left: 15px; margin-right: 15px"
+              style="margin-left: 80px"
             />
             <h3 class="text">Antoine Famibelle</h3>
           </router-link>

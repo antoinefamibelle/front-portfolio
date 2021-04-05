@@ -18,9 +18,8 @@
         <v-row>
           <v-col md="12" style="margin-top: 50px">
             <h2 class="title titleText text">
-              Je suis Antoine, un etudiant en informatique mais aussi un
-              Developpeur Web et un Chef de Projet travaillant actuellement chez
-              Pertimm.
+              Je suis Antoine, un etudiant en informatique mais aussi un Lead
+              Developpeur Fullstack travaillant actuellement chez BigBagNGo
             </h2>
           </v-col>
           <v-col md="12" style="margin-top: 50px">

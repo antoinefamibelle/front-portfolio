@@ -7,7 +7,7 @@
       class="center"
     >
       <v-col md="12">
-        <h1 class="title" style="text-align: center">
+        <h1 class="title text" style="text-align: center">
           Alors ? Pret a faire connaissance ?
         </h1>
       </v-col>
