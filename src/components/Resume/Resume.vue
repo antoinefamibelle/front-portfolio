@@ -32,13 +32,13 @@
       >
         <v-row>
           <v-col md="12" style="margin-top: 50px">
-            <h2 class="title titleText text">
+            <h2 class="text">
               Je suis Antoine, un etudiant en informatique mais aussi un Lead
               Developpeur Fullstack travaillant actuellement chez BigBagNGo
             </h2>
           </v-col>
           <v-col md="12" style="margin-top: 50px">
-            <h4 class="text">
+            <h3 class="text">
               Cela fait maintenant + de 3ans que je suis rentrer a Epitech Paris
               afin de devenir developpeur. Passionne par ce metier, j'ai lors de
               mes etudes decider de me lancer en Freelance afin de financer ces
@@ -46,7 +46,7 @@
               pour le Front-End ainsi que avec une certaines sensibilites a l'UX
               et a l'UI. Sportif de haut niveau, j'ai pour valeur le
               professionalisme, l'effort, et le gout du travail bien fait.
-            </h4>
+            </h3>
           </v-col>
         </v-row>
       </v-col>

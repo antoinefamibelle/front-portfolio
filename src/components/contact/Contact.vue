@@ -5,6 +5,7 @@
       justify="center"
       align="center"
       class="center"
+      style="height: 100%"
     >
       <v-col md="12">
         <h1 class="title text" style="text-align: center">
@@ -85,7 +86,7 @@
           </v-row>
           <div>
             <v-btn
-              style="margin-left: 20%; margin-right: 20%; margin-top: -15%"
+              style="margin-left: 20%; margin-right: 20%; margin-top: -20%"
               @click="sendMessage"
               >Envoyer votre message</v-btn
             >
