@@ -54,59 +54,71 @@
             <v-btn color="blue" @click="overlay = !overlay">Menu</v-btn>
             <v-overlay :value="overlay">
               <v-row>
-                <v-btn
-                  icon
-                  @click="overlay = false"
-                  href="/"
-                  style="text-align: center"
-                >
-                  <h3 style="text-align: center">Accueil</h3>
-                </v-btn>
-              </v-row>
-              <v-row>
-                <v-btn
-                  icon
-                  @click="overlay = false"
-                  href="/about"
-                  style="text-align: center"
-                >
-                  <h3 style="text-align: center">Presentation</h3>
-                </v-btn>
-              </v-row>
-              <v-row>
-                <v-btn
-                  icon
-                  @click="overlay = false"
-                  href="/realisation"
-                  style="text-align: center"
-                >
-                  <h3 style="text-align: center">Realisation</h3>
-                </v-btn>
-              </v-row>
-              <v-row>
-                <v-btn
-                  icon
-                  @click="overlay = false"
-                  href="/competences"
-                  style="text-align: center"
-                >
-                  <h3 style="text-align: center">Competences</h3>
-                </v-btn>
-              </v-row>
-              <v-row>
-                <v-btn
-                  icon
-                  @click="overlay = false"
-                  href="/contact"
-                  style="text-align: center"
-                >
-                  <h3 style="text-align: center">Contact</h3>
-                </v-btn>
-              </v-row>
-              <v-row>
-                <v-btn @click="overlay = false">
-                  <v-icon>mdi-close</v-icon>
-                </v-btn>
+                <v-col cols="12">
+                  <v-btn
+                    icon
+                    @click="overlay = false"
+                    href="/"
+                    style="text-align: center"
+                  >
+                    <h2 style="text-align: center">Accueil</h2>
+                  </v-btn>
+                </v-col>
+                <v-col cols="12">
+                  <v-btn
+                    icon
+                    @click="overlay = false"
+                    href="/about"
+                    style="text-align: center"
+                  >
+                    <h2 style="text-align: center">Presentation</h2>
+                  </v-btn>
+                </v-col>
+                <v-col cols="12">
+                  <v-btn
+                    icon
+                    @click="overlay = false"
+                    href="/realisation"
+                    style="text-align: center"
+                  >
+                    <h2 style="text-align: center">Realisation</h2>
+                  </v-btn>
+                </v-col>
+                <v-col cols="12">
+                  <v-btn
+                    icon
+                    @click="overlay = false"
+                    href="/experiences"
+                    style="text-align: center"
+                  >
+                    <h2 style="text-align: center">Experiences</h2>
+                  </v-btn>
+                </v-col>
+                <v-col cols="12">
+                  <v-btn
+                    icon
+                    @click="overlay = false"
+                    href="/competences"
+                    style="text-align: center"
+                  >
+                    <h2 style="text-align: center">Competences</h2>
+                  </v-btn>
+                </v-col>
+                <v-col cols="12">
+                  <v-btn
+                    icon
+                    @click="overlay = false"
+                    href="/contact"
+                    style="text-align: center"
+                  >
+                    <h2 style="text-align: center">Contact</h2>
+                  </v-btn>
+                </v-col>
+                <v-col cols="12">
+                  <v-btn style="width: 150px" @click="overlay = false">
+                    <v-icon>mdi-close</v-icon>
+                  </v-btn>
+                </v-col>
               </v-row>
             </v-overlay>
           </div>

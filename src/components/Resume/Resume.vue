@@ -1,12 +1,27 @@
 <template>
   <div style="background-color: #111">
     <v-row md="12">
-      <v-col md="6" sm="12" class="rightAlign" style="padding: 10%">
+      <v-col
+        v-if="!$vuetify.breakpoint.mobile"
+        cols="12"
+        md="6"
+        sm="12"
+        class="rightAlign"
+        style="padding: 10%"
+      >
         <v-img
           class="imgRound"
           src="../../assets/me.jpg"
           alt="This is a picture of me (Antoine Famibelle)"
-          style="max-width: 80%; max-height: 100%; margin-left: 20%"
+          style="max-width: 100%; max-height: 100%; margin-left: 20%"
+        />
+      </v-col>
+      <v-col v-else cols="12" sm="12" xs="12" style="padding: 10%">
+        <v-img
+          class="imgRound"
+          src="../../assets/me.jpg"
+          alt="This is a picture of me (Antoine Famibelle)"
+          style="max-width: 100%; max-height: 100%"
         />
       </v-col>
       <v-col
@@ -38,9 +53,8 @@
       <v-col v-else xs="12" sm="12" md="12" style="padding: 10%">
         <v-col xs="12" sm="12" md="12">
           <h2 class="title titleText text" style="text-align: center">
-            Je suis Antoine, un etudiant en informatique mais aussi un
-            Developpeur Web et un Chef de Projet travaillant actuellement chez
-            Pertimm.
+            Je suis Antoine, un etudiant en informatique mais aussi un Lead
+            Developpeur Web travaillant actuellement chez BigBagNGo.
           </h2>
         </v-col>
         <v-col xs="12" sm="12" md="12">

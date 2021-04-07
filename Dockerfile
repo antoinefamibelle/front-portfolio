@@ -1,23 +1,13 @@
-FROM debian:latest
+FROM node:14
 
-RUN apt-get update && apt-get install -y \
-    curl
+WORKDIR /usr/app
 
-WORKDIR /user/src/app
+COPY package*.json ./
 
-COPY package.json ./
-
-RUN curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
-RUN bash nodesource_setup.sh
-RUN apt-get update && apt-get install -y nodejs
-
-RUN npm -v
-RUN node -v
-RUN npm update
-RUN npm install package.json
+RUN npm install
 
 COPY . .
 
 EXPOSE 8000
 
-CMD [ "npm", "run", "serve" ]
+CMD ["yarn", "serve"]
