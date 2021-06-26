@@ -1,5 +1,5 @@
-<template>
-  <div id="#app">
+<template class='respContainer'>
+  <div id="#app" class="respContainer">
     <div id="nav">
       <Navbar />
     </div>
@@ -28,12 +28,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1080px) {
   html,
   body {
     margin: 0;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 
@@ -42,5 +42,9 @@ body {
   margin: 0;
   height: 100%;
   overflow-x: hidden;
+}
+
+.respContainer {
+  height: 100vh;
 }
 </style>

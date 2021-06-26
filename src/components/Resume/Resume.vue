@@ -31,7 +31,7 @@
         style="padding: 10%"
       >
         <v-row>
-          <v-col md="12" style="margin-top: 50px">
+          <v-col md="12">
             <h2 class="text">
               Je suis Antoine, un etudiant en informatique mais aussi un Lead
               Developpeur Fullstack travaillant actuellement chez BigBagNGo

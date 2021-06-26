@@ -1,5 +1,11 @@
 <template>
   <div style="background-color: #111">
+    <div v-if='sucess'>
+      <v-alert
+        type="success"
+      >Votre message à été envoyé.</v-alert>
+    </div>
+
     <v-row
       v-if="!$vuetify.breakpoint.mobile"
       justify="center"
@@ -191,6 +197,7 @@ export default {
       phone: "",
       subject: "",
       message: "",
+      sucess: Boolean,
       rules: {
         required: (value) => !!value || "Required.",
         email: (value) => {
@@ -233,15 +240,15 @@ export default {
 
         axios
           .request(options)
-          .then(function (response) {
-            console.log(response.data);
-            console.log("Mail has been send");
-            this.name = "";
-            this.email = "";
-            this.message = "";
-            this.subject = "";
-            this.phone = "";
+          .then(function () {
+            this.sucess = true;
+            this.name = " ";
+            this.email = " ";
+            this.message = " ";
+            this.subject = " ";
+            this.phone = " ";
           })
+          alert.sucess('Votre message à été envoyer.')
           .catch(function (err) {
             console.log(err);
           });
