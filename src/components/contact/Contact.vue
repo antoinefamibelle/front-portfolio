@@ -248,12 +248,12 @@ export default {
             this.subject = " ";
             this.phone = " ";
           })
-          alert.sucess('Votre message à été envoyer.')
+          setTimeout(() => {
+            this.sucess = false;
+          }, 10000)
           .catch(function (err) {
             console.log(err);
           });
-      } else {
-        console.log("Quelqu'un a mal rempli le formulaire");
       }
     },
   },

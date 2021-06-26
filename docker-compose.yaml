@@ -2,6 +2,7 @@ version: '3.0'
 
 services:
     front:
+        image: front-portfolio-v1.0
         build: ./
         container_name: front-portfolio
         restart: always
